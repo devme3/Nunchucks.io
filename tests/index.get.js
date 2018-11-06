@@ -3,7 +3,7 @@
 var test = require('unit.js');
 var index = require('../functions/index/get/index.js');
 
-describe('Tests index', function() {
+describe('Tests index get', function() {
   it('verifies successful response', function(done) {
     index.get({ /* event */ }, { /* context */ }, (err, result) => {
       try {
