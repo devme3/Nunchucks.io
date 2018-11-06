@@ -1,0 +1,32 @@
+@import "variables.less";
+@import "mixins.less";
+
+html {
+  color: @text-color;
+  font-size: 15px;
+  background: @primary-color;
+  min-width: 550px;
+  font-family: 'Covered By Your Grace', sans-serif;
+}
+
+body {
+  .no-margin-or-padding;
+}
+
+.rating-container {
+  margin: 20px;
+}
+
+.star {
+  color: @text-color;
+  padding: 5px;
+  display: inline-block;
+}
+
+.star.active {
+  color: @rating-color;
+}
+
+.star.active.focus {
+  outline: none;
+}
