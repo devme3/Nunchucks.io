@@ -29,9 +29,9 @@
   "scripts": {
     "start": "npm run build && webpack-dev-server --open",
     "build": "npm run clean -s && npm run less -s && npm run lint -s && webpack",
-    "less": "lessc client/css/main.less public/assets/css/main.css",
+    "less": "lessc client/css/index.less public/assets/css/index.css",
     "lint": "eslint client/js",
-    "clean": "rimraf public/assets/js/index.js && rimraf public/assets/css/main.css",
+    "clean": "rimraf public/assets/js/index.js && rimraf public/assets/css/index.css",
     "test": "mocha --recursive tests"
   }
 }
