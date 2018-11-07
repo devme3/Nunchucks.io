@@ -31,7 +31,7 @@
     "build": "npm run clean -s && npm run less -s && npm run lint -s && webpack",
     "less": "lessc client/css/main.less public/assets/css/main.css",
     "lint": "eslint client/js",
-    "clean": "rimraf public/assets/js/app.js && rimraf public/assets/css/main.css",
+    "clean": "rimraf public/assets/js/index.js && rimraf public/assets/css/main.css",
     "test": "mocha --recursive tests"
   }
 }
