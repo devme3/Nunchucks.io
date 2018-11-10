@@ -1,37 +1,25 @@
 {
-  "name": "ratings",
-  "description": "Sample rating system",
-  "version": "0.0.1",
+  "name": "Nunchucks.io-Development",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "eslint": "^4.7.2",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.4.0",
-    "less": "^2.7.2",
-    "prop-types": "^15.6.2",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "rimraf": "^2.6.2",
-    "webpack": "4.12.0",
-    "webpack-cli": "3.0.8",
-    "webpack-dev-server": "3.1.4"
-  },
-  "devDependencies": {
-    "mocha": "5.0.0",
-    "unit.js": "2.0.0"
-  },
+  "repository": "https://github.com/devme3/Nunchucks.io-Development.git",
+  "author": "Nunchucks",
   "scripts": {
-    "start": "npm run build && webpack-dev-server --open",
-    "build": "npm run clean -s && npm run less -s && npm run lint -s && webpack",
-    "less": "lessc client/css/index.less public/assets/css/index.css",
-    "lint": "eslint client/js",
-    "clean": "rimraf public/assets/js/index.js && rimraf public/assets/css/index.css",
+    "dev": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=production",
     "test": "mocha --recursive tests"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "mocha": "^5.2.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "unit.js": "^2.0.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
